@@ -1,17 +1,14 @@
-import './App.css';
-import Layout from './component/Layout';
+import './App.scss';
+import Layout from './component/Layout/Layout';
+import SideNavbar from "./component/SideNavbar";
+import Content from "./component/Content";
 // import {Routes, Route} from 'react-router-dom';
 
 function App() {
-  function onClickHandler() {
-    const input = document.getElementById("name");
-    alert(`Hello, ${input.value}!`);
-  }
   return (
       <div className="App">
-          <Layout></Layout>
-          <input type="text" id="name" placeholder="name"/>
-          <input onClick={onClickHandler} type="button" id="btn" value="Submit"/>
+          <SideNavbar />
+          <Content />
       </div>
   );
 }

@@ -1,0 +1,50 @@
+.content {
+  padding: 130px 80px;
+  display: flex;
+
+  .greetings {
+    position: absolute;
+
+    h1 {
+      font-size: 3rem;
+      font-family: 'Kode Mono', sans-serif;
+    }
+
+    .name {
+      background-color: cornflowerblue;
+      padding: 2px;
+      color: floralwhite;
+    }
+
+    .pos {
+      text-decoration: underline cornflowerblue;
+    }
+
+    .home-cta {
+      font-family: "Poppins Medium",sans-serif;
+      border: none;
+      cursor: pointer;
+      background-color: cornflowerblue;
+      color: floralwhite;
+      border-radius: 5px;
+      font-size: 15px;
+      padding: 10px;
+
+    }
+
+    .home-cta:hover {
+      background-color: #588ae3;
+    }
+  }
+
+  .home-image {
+
+    img {
+      position: absolute;
+      right: 150px;
+      top: 55px;
+      border-radius: 200px;
+      height: 500px;
+    }
+  }
+}

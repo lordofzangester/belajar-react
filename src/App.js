@@ -1,15 +1,21 @@
 
 import './App.scss';
-import Layout from './component/Layout/Layout';
-import SideNavbar from "./component/SideNavbar";
-import Content from "./component/Content";
-// import {Routes, Route} from 'react-router-dom';
+import Sidebar from "./component/Navbar/Sidebar";
+import {Route, Routes} from "react-router-dom";
+import Home from "./component/Home/Home";
+import About from "./component/About/About";
+import Contact from "./component/Contact/Contact";
+
 
 function App() {
   return (
       <div className="App">
-          <SideNavbar />
-          <Content />
+          <Sidebar />
+          <Routes>
+              <Route path="/" element={<Home></Home>}></Route>
+              <Route path="/about" element={<About></About>}></Route>
+              <Route path="/contact" element={<Contact></Contact>}></Route>
+          </Routes>
       </div>
   );
 }
